@@ -12,19 +12,19 @@ The following recommended installation requires [http://getcomposer.org](compose
 Add the following to your `composer.json` file.
 
 ```json
-{  
+{
   "minimum-stability" : "dev",
   "require": {
-    "sendgrid/smtpapi": "0.0.1"
+    "radicalloop/smtpapi": "0.0.1.1"
   }
 }
-``` 
+```
 
-Then at the top of your script require the autoloader:                 
- 
-```bash 
-require 'vendor/autoload.php';                                         
-``` 
+Then at the top of your script require the autoloader:
+
+```bash
+require 'vendor/autoload.php';
+```
 
 ## Usage
 
@@ -129,14 +129,14 @@ $header->addFilter('footer', 'text/html', '<strong>boo</strong>');
 
 ```php
 $header    = new Smtpapi\Header();
-$filter = array( 
-  'footer' => array( 
-    'setting' => array( 
+$filter = array(
+  'footer' => array(
+    'setting' => array(
       'enable' => 1,
       "text/plain" => 'You can haz footers!'
     )
   )
-); 
+);
 $header->setFilters($filter);
 ```
 
