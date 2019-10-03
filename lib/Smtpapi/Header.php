@@ -9,6 +9,7 @@ class Header {
   public $category     = array();
   public $section      = array();
   public $filters      = array();
+  public $ip_pool      = '';
 
   public function __construct() {}
 
@@ -17,7 +18,7 @@ class Header {
     return $this;
   }
 
-  public function setTos(array $emails) { 
+  public function setTos(array $emails) {
     $this->to = $emails;
     return $this;
   }
@@ -65,13 +66,18 @@ class Header {
   public function addFilter($filter_name, $parameter_name, $parameter_value) {
     $this->filters[$filter_name]['settings'][$parameter_name] = $parameter_value;
     return $this;
-  }  
+  }
 
   public function setFilters($filter_setting) {
     $this->filters = $filter_setting;
     return $this;
   }
-  
+
+  public function setIpPool($ip_pool) {
+    $this->ip_pool = $ip_pool;
+    return $this;
+  }
+
   private function toArray() {
     $data = array();
 
@@ -93,7 +99,7 @@ class Header {
     if ($this->filters) {
       $data["filters"] = $this->filters;
     }
-  
+
     return $data;
   }
 
@@ -103,7 +109,7 @@ class Header {
     }
 
     $json_string = json_encode($this->toArray(), JSON_HEX_APOS | JSON_HEX_QUOT | JSON_HEX_AMP);
-    
+
     // unescape 5.3 PHP's escaping of forward slashes
     return str_replace('\\/', '/', $json_string);
   }
