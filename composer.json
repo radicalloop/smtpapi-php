@@ -1,8 +1,8 @@
 {
-    "name": "sendgrid/smtpapi",
+    "name": "radicalloop/smtpapi",
     "description": "Build SendGrid X-SMTPAPI headers in PHP.",
     "version": "0.6.1",
-    "homepage": "http://github.com/sendgrid/smtpapi-php",
+    "homepage": "http://github.com/radicalloop/smtpapi-php",
     "license": "MIT",
     "keywords": ["SendGrid", "sendgrid", "email", "send", "grid", "smtpapi", "smtp", "api", "xsmtp", "X-SMTP"],
     "require": {
@@ -15,7 +15,7 @@
         "swiftmailer/swiftmailer": "^5.4 - Needed to run the example scripts"
     },
     "replace": {
-        "sendgrid/smtpapi-php": "*"
+        "radicalloop/smtpapi-php": "*"
     },
     "type": "library",
     "autoload": {
