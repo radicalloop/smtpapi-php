@@ -99,6 +99,9 @@ class Header {
     if ($this->filters) {
       $data["filters"] = $this->filters;
     }
+    if ($this->ip_pool) {
+      $data["ip_pool"] = $this->ip_pool;
+    }
 
     return $data;
   }
