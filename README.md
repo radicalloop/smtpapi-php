@@ -15,7 +15,7 @@ Add the following to your `composer.json` file.
 {
   "minimum-stability" : "dev",
   "require": {
-    "radicalloop/smtpapi": "0.0.1.1"
+    "radicalloop/smtpapi-php": "dev-ip-pool-added"
   }
 }
 ```
