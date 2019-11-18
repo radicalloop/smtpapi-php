@@ -1,7 +1,7 @@
 {
   "name": "radicalloop/smtpapi",
   "description": "Build SendGrid X-SMTPAPI headers in PHP.",
-  "version": "0.0.1.1",
+  "version": "0.0.1.2",
   "homepage": "https://github.com/radicalloop/smtpapi-php",
   "license": "MIT",
   "keywords": ["SendGrid", "sendgrid", "email", "send", "grid", "smtpapi", "smtp", "api", "xsmtp", "X-SMTP"],
