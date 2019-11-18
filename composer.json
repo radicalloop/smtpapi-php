@@ -1,5 +1,5 @@
 {
-  "name": "radicalloop/smtpapi-php",
+  "name": "radicalloop/smtpapi",
   "description": "Build SendGrid X-SMTPAPI headers in PHP.",
   "version": "0.0.1.1",
   "homepage": "https://github.com/radicalloop/smtpapi-php",
